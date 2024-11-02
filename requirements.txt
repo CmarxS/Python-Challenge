@@ -1,0 +1,3 @@
+pip install oracledb
+pip install flask
+pip install flask_cors
