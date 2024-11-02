@@ -6,8 +6,8 @@ app = Flask(__name__)
 CORS(app, origins=["http://localhost:5000", "http://localhost:3000"])
 
 def get_conexao():
-    return oracledb.connect(user='rm555997', password='090705',
-                            dsn='oracle.fiap.com.br/orcl')
+    return oracledb.connect(user='seu_usuario', password='sua_senha',
+                            dsn='dsn_do_seu_banco_oracle')
 
 @app.route('/login', methods=['POST'])
 def recupera_login():
